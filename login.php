@@ -28,7 +28,7 @@
         left: 50%;
         transform: translate(-50%, -50%);
         background-color: rgba(2, 0, 126, 1);
-        width: 400px;
+        width: auto;
         margin: 30px auto;
         padding: 20px;
         border-radius: 10px;
@@ -71,6 +71,14 @@
         text-decoration: underline;
         color: rgba(255, 69, 69, 1);
     }
+
+    @media screen and (max-width: 600px) {
+        .container {
+            width: 80%;
+        }
+        
+    }
+
 </style>
 <body>
     <h1>Faça seu Login!</h1>

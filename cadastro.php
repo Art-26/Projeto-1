@@ -85,6 +85,13 @@
         text-decoration: underline;
         color: rgba(255, 69, 69, 1);
     }
+
+    @media screen and (max-width: 600px) {
+        .container {
+            width: 80%;
+        }
+        
+    }
 </style>
 <body>
     <h1>Realize seu cadastro no formulário abaixo!</h1>
