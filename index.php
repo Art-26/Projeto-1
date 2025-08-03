@@ -1,33 +1,62 @@
-<?php
-
-    if (isset($_POST['submit'])) {
-        include_once('config.php');
-        $nome = $_POST['nome'];
-        $email = $_POST['email'];
-        $senha = $_POST['senha'];
-
-        $result = $conexao->query("INSERT INTO usuarios(nome, email, senha) VALUES('$nome', '$email', '$senha')");
-
-    }
-
-?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro</title>
+    <title>Home</title>
 </head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
 
+    body {
+        background-color: rgba(57, 70, 182, 1);
+        color: rgba(255, 255, 255, 1);
+    }
+
+    header {
+        display: flex;
+        background-image: linear-gradient(to right, rgba(2, 0, 126, 1), rgba(93, 116, 248, 1));
+        color: white;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+
+    nav a {
+        background-color: rgba(243, 8, 8, 1);
+        color: white;
+        text-decoration: none;
+        margin-right: 10px;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    nav a:hover {
+        background-color: rgba(243, 8, 8, 0.8);
+    }
+
+    hr {
+        color: rgba(93, 116, 248, 1);
+        border: 1px solid rgba(93, 116, 248, 1);
+    }
+
+    .meuprojeto {
+        text-align: center;
+        margin-top: 100px;
+    }
+</style>
 <body>
-    <h1>Bem vindo!</h1>
-
-    <form action="index.php" method="post">
-        <input type="text" name="nome" id="nome" placeholder="Digite seu nome">
-        <input type="email" name="email" id="email" placeholder="Digite seu email">
-        <input type="password" name="senha" id="senha" placeholder="Digite sua senha">
-
-        <input type="submit" name="submit" id="submit" value="Enviar">
-    </form>
+    <header>
+        <h1>Home</h1>
+        <nav>
+            <a href="login.php">Login</a>
+            <a href="cadastro.php">Cadastro</a>
+        </nav>
+    </header>
+    <hr>
+    <h1 class="meuprojeto">Bem vindo ao meu primeiro projeto com PHP e Banco de Dados.</h1>
 </body>
 </html>

@@ -9,6 +9,4 @@ $dbname="projeto-um";
 
 $conexao = new mysqli($host, $user, $password, $dbname, $port, $socket);
 
-//$con->close();
-
 ?>
