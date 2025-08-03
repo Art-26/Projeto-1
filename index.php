@@ -6,9 +6,11 @@
     <title>Home</title>
 </head>
 <style>
+    @import url('https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&display=swap');
     * {
         margin: 0;
         padding: 0;
+        font-family: 'Google Sans Code', sans-serif;
     }
 
     body {

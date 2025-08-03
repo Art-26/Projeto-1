@@ -19,9 +19,11 @@
     <title>Cadastro</title>
 </head>
 <style>
+    @import url('https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&display=swap');
     * {
         margin: 0;
         padding: 0;
+        font-family: 'Google Sans Code', sans-serif;
     }
 
     body {
@@ -70,6 +72,19 @@
         color: rgba(252, 252, 252, 1);
     }
 
+    p {
+        text-align: center;
+    }
+
+    p a {
+        text-decoration: none;
+        color: rgba(157, 158, 255, 1);
+    }
+
+    p a:hover {
+        text-decoration: underline;
+        color: rgba(255, 69, 69, 1);
+    }
 </style>
 <body>
     <h1>Realize seu cadastro no formulário abaixo!</h1>
@@ -81,6 +96,9 @@
 
         <input type="submit" name="submit" id="submit" value="Enviar">
 
+        <p>Ja possui uma conta? <a href="login.php">Login</a></p>
+
+        <p>Voltar para o <a href="index.php">Home</a></p>
     </form>
     </div>
 </body>
