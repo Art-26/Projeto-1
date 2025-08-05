@@ -145,6 +145,9 @@ Este projeto foi criado para fins educacionais e de aprendizado.
 
 - [Como configurar o PHP para usar com o MySQL] (https://www.youtube.com/watch?v=IeTbZOxEwGc)
 
+## Confira o projeto funcionando no link abaixo:
+
+- (https://projeto1php.infinityfree.me/)
 ---
 
 **Desenvolvido por Arthur como primeiro projeto PHP + MySQL**
